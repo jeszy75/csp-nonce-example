@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nonce Example</title>
+</head>
+<body>
+    <h1>Nonce Example</h1>
+    <p id="allowed">Allowed inline script: not yet executed.</p>
+    <p id="blocked">Blocked inline script: not yet executed.</p>
+    <script nonce="__CSP_NONCE__">
+        // The script executes if the nonce matches
+        document.getElementById("allowed").textContent = "Allowed inline script: executed successfully!";
+    </script>
+    <script>
+        // The script doesn't execute because there is no nonce
+        document.getElementById("blocked").textContent = "Blocked inline script: executed successfully!";
+    </script>
+</body>
+</html>

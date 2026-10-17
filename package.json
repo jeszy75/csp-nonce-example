@@ -1,0 +1,14 @@
+{
+    "name": "csp-nonce-example",
+    "version": "0.0.1",
+    "private": false,
+    "description": "Minimal HTTP server with per-response CSP nonces",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "engines": {
+        "node": ">=24"
+    },
+    "license": "MIT"
+}
